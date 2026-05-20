@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*         function greet(name) {
+                    return `こんにちは、${name}さん`;
+                }
+                console.log(greet("田中"));
+                //greet()の中身が田中になったので、こんにちは、田中さんになる
+                //functionなら下における、ホイスティングができる
+         */
+
+        /*         const greet = function (name) {
+                    return `こんにちは、${name}さん`;
+                }
+                //関数式は上にないと実行できない
+                //プログラムの特性上こっちのほうがわかりやすい！
+                console.log(greet("西田"));
+         */
+
+        /*         const greet = (name) => {
+                    return `こんにちは、${name}さん`;
+                };
+                console.log(greet("相田"));
+         */
+
+
+        /*         //消費税を加えた金額を返す関数の宣言ー引数付き
+                function calcTaxIncluded(price) {
+                    return Math.floor(price * 1.1);
+                }
+                //関数の実行が代入されている
+                const total = calcTaxIncluded(1200);
+                console.log(total);
+         */
+
+        /*         const fireTV = (price) => {
+                    return Math.floor(price * 0.7)
+                        ;
+                }
+                const total = fireTV(3000);
+                console.log(`値下げ価格、${total}円です`);
+
+
+                const chunichi = (name) => {
+                    return `${name}ドラゴンズ`;
+                };
+                const team = chunichi('中日');
+                console.log(chunichi)
+         */
+
+        /*         const students = ["田中", "鈴木", "佐藤"];
+                students.forEach(function (student) {
+                    console.log(student);
+                });
+         */
+
+        /*         const students = ["田中", "鈴木", "佐藤"];
+                const studentNames = students.map(function (name) {
+                    return name + "さん";
+                })
+                console.log(studentNames);
+                console.log(students)
+
+         */
+
+        const students = [
+            { name: "田中", grade: 2 },
+            { name: "鈴木", grade: 2 },
+            { name: "佐藤", grade: 1 },
+        ];
+
+        function createStudentText(student) {
+            return `${student.grade}年の${student.name}さん`;
+        }
+
+        students.forEach(function (student) {
+            console.log(createStudentText(student));
+        });
+
+    </script>
+</body>
+
+</html>
