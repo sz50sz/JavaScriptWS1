@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>scroll_app</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+
+  <div class="progress-bar"></div>
+
+  <section class="hero">
+    <h1 class="hero-title">スクロールしてください</h1>
+  </section>
+
+  <section class="fade-target">
+    <div>
+      <h2>このセクションが画面に入ったらフェードインする</h2>
+      <p>スクロールしてここまで来ると表示されます。</p>
+    </div>
+  </section>
+
+  <!-- 既存：.fade-target のセクション -->
+
+  <section class="cards">
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+    <div class="card">5</div>
+    <div class="card">6</div>
+  </section>
+
+  <section class="parallax-section">
+    <div class="parallax-bg"></div>
+    <div class="parallax-content">
+      <h2>奥行きを感じる演出</h2>
+    </div>
+  </section>
+
+  <div class="spacer">↑ スクロールするとhero-titleが消えていきます</div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

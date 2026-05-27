@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人気投票</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+    <div class="page-progress-bar"></div>
+
+    <section class="hero">
+        <h1 class="hero-title">↓↓↓　好きな学校行事人気投票　↓↓↓</h1>
+    </section>
+
+
+    <div class="main">
+        <div id="voteList">
+            <div class="card" data-id="1">
+                <div class="hundred-effect">100</div>
+                <div class="candidate-image">
+                    <img src="./images/bunkasai_students.png" alt="文化祭のイラスト">
+                </div>
+                <div class="candidate-name">文化祭</div>
+                <div class="votes">0票</div>
+                <div class="progress-bar">
+                    <div class="bar"></div>
+                </div>
+                <button class="vote-btn">投票する</button>
+            </div>
+            <div class="card" data-id="2">
+                <div class="hundred-effect">100</div>
+                <div class="candidate-image">
+                    <img src="./images/travel_happy_school_blazer_set.png" alt="修学旅行のイラスト">
+                </div>
+                <div class="candidate-name">修学旅行</div>
+                <div class="votes">0票</div>
+                <div class="progress-bar">
+                    <div class="bar"></div>
+                </div>
+                <button class="vote-btn">投票する</button>
+            </div>
+            <div class="card" data-id="3">
+                <div class="hundred-effect">100</div>
+                <div class="candidate-image">
+                    <img src="./images/undoukai_tokyousou.png" alt="運動会のイラスト">
+                </div>
+                <div class="candidate-name">運動会</div>
+                <div class="votes">0票</div>
+                <div class="progress-bar">
+                    <div class="bar"></div>
+                </div>
+                <button class="vote-btn">投票する</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="./src/main.js"></script>
+
+</body>
+
+</html>
