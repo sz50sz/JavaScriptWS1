@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstrage</title>
+</head>
+
+<body>
+    <h1>LocalStorage</h1>
+    <p>LocalStorage にデータを保存する練習</p>
+    <script>
+        localStorage.setItem('count', 5);
+        const count = localStorage.getItem('count'); // '5'（文字列）
+        console.log(count + 1); // '51' ← 文字列連結になってしまう
+        console.log(Number(count) + 1); // 6
+        // 保存
+        localStorage.setItem('theme', 'dark');
+
+        // 取得
+        const theme = localStorage.getItem('theme'); // 'dark'
+
+        // 削除
+        localStorage.removeItem('theme');
+
+        // 全削除
+        localStorage.clear();
+        const candidates = [
+            { id: 1, name: 'A', votes: 0 },
+            { id: 2, name: 'B', votes: 3 },
+        ];
+
+        // 保存（オブジェクト → 文字列）
+        localStorage.setItem('candidates', JSON.stringify(candidates));
+
+        // 取得（文字列 → オブジェクト）
+        const data = JSON.parse(localStorage.getItem('candidates'));
+        console.log(data[1].votes); // 3
+
+        const saved = localStorage.getItem('candidates');
+
+
+    </script>
+
+
+</body>
+
+</html>

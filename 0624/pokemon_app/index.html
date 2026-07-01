@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <main class="app">
+        <h1>Find Your Pokemon!</h1>
+
+        <form id="searchForm" class="search search-form-1">
+            <label>
+                <input id="keyword" type="text" placeholder="例：pikachu" required>
+            </label>
+            <button type="submit" aria-label="検索"></button>
+        </form>
+
+        <div class="loader" hidden>
+            <div class="spinner" aria-label="読み込み中"></div>
+        </div>
+
+        <p class="error" hidden></p>
+        <article class="card" hidden></article>
+    </main>
+
+
+    <script type="module" src="./src/main.js" defer></script>
+</body>
+
+</html>
